@@ -1,6 +1,6 @@
 /*
-   DistanceBySoftwareSerial.pde - URM 37 Control Library Version 2.0.0
-Author: Miles Burton, miles@mnetcs.com
+   DistanceBySoftwareSerial.pde - URM 37 Control Library Version 2.5.0
+Author: Miles Burton, www.milesburton.com
 Copyright (c) 2009 Miles Burton All Rights Reserved
 
 This library is free software; you can redistribute it and/or
@@ -19,15 +19,8 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 */
 
+#include <SoftwareSerial.h>
 #include <URMSerial.h>
-
-
-// The measurement we're taking
-#define DISTANCE 1
-#define TEMPERATURE 2
-#define ERROR 3
-#define NOTREADY 4
-#define TIMEOUT 5
 
 URMSerial urm;
 
@@ -61,7 +54,6 @@ int getMeasurement()
 void setup() {
     Serial.begin(9600);                  // Sets the baud rate to 9600
     urm.begin(7,6,9600);                 // RX Pin, TX Pin, Baud Rate
-    //urm.setMode(MODE_SERIAL);
     Serial.println("URM37 Library by Miles Burton - Distance. Version 2.0");   // Shameless plug 
 }
 

@@ -1,0 +1,46 @@
+#######################################
+# Syntax Coloring Map For URM37
+#######################################
+
+#######################################
+# FUNCTIONS (KEYWORD2)
+#######################################
+
+Firmata	KEYWORD1
+callbackFunction		KEYWORD2
+hasReading			KEYWORD2
+reqTimeout			KEYWORD2
+getMeasurement			KEYWORD2
+requestMeasurement		KEYWORD2
+requestMeasurementOrTimeout	KEYWORD2
+setServo			KEYWORD2
+setServoMax			KEYWORD2
+setServoMin			KEYWORD2
+setTimeout			KEYWORD2
+setSensorThresholdMin		KEYWORD2
+setSensorThresholdMax		KEYWORD2
+getSensorThresholdMin		KEYWORD2
+getSensorThresholdMax		KEYWORD2
+setMode				KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+DISTANCE			LITERAL1
+TEMPERATURE			LITERAL1
+ERROR				LITERAL1
+NOTREADY			LITERAL1
+TIMEOUT				LITERAL1
+COMMAND_TEMP			LITERAL1
+COMMAND_DISTANCE		LITERAL1
+COMMAND_EEPROMREAD		LITERAL1
+COMMAND_EEPROMWRITE		LITERAL1
+Header				LITERAL1
+HighByte			LITERAL1
+LowByte				LITERAL1
+Sum				LITERAL1
+MODE_SERIAL			LITERAL1
+MODE_AUTO			LITERAL1
+MODE_PWM			LITERAL1
+

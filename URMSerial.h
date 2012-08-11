@@ -3,7 +3,7 @@
 
 /*
 	URMSerial.h - URM 37 Control Library Version 2.0.0
-	Author: Miles Burton, miles@mnetcs.com
+	Author: Miles Burton, www.milesburton.com
 	Copyright (c) 2009 Miles Burton All Rights Reserved
 
 	This library is free software; you can redistribute it and/or
@@ -38,11 +38,18 @@
 
 */
 
+#include <Arduino.h>
+
 #include <inttypes.h>
 #include <stdio.h>
+#include "HardwareSerial.h"
 
-#include <Arduino.h>
+#if defined(ARDUINO) && ARDUINO >= 100
 #include <SoftwareSerial.h>
+#else
+#include <NewSoftSerial.h>
+#endif
+
 
 // The measurement we're taking
 #define DISTANCE 1

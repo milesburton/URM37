@@ -45,7 +45,6 @@
 */
 
 #include "URMSerial.h"
-#include <HardwareSerial.h>
 
 URMSerial::URMSerial(void)
 {
